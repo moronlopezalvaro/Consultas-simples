@@ -449,3 +449,7 @@ ORDER BY id_almacen DESC, nombre DESC;
 SELECT nombre, descripcion FROM categoria
 WHERE nombre LIKE 'C%'
 ORDER BY id_categoria ASC;
+
+-- 10.- Muestra todos los datos de los almacenes ordenados alfabéticamente primero por el nombre de la calle y después por la capacidad_total de forma ascendente.
+SELECT * FROM almacen
+ORDER BY calle ASC, capacidad_total ASC;
