@@ -439,3 +439,8 @@ SELECT * FROM producto WHERE stock > 14;
 
 -- 7.- Muestra los datos de la calle, ciudad y código postal de las direcciones que no estén marcadas como favoritas.
 SELECT calle, ciudad, codigo_postal FROM direccion WHERE es_favorita = 0;
+
+-- 8.- Obtén los productos cuyo precio sea menor de 30, ordenados primero por el id_almacen y después por el nombre de forma descendente.
+SELECT precio, id_almacen, nombre FROM producto
+WHERE precio < 30 
+ORDER BY id_almacen DESC, nombre DESC;
