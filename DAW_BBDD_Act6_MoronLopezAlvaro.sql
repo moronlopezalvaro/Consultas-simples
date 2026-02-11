@@ -436,3 +436,6 @@ SELECT id_direccion, ciudad, id_usuario FROM direccion ORDER BY id_usuario ASC;
 
 -- 6.- Muestra todos los datos de los productos cuyo stock sea mayor que 14.
 SELECT * FROM producto WHERE stock > 14;
+
+-- 7.- Muestra los datos de la calle, ciudad y código postal de las direcciones que no estén marcadas como favoritas.
+SELECT calle, ciudad, codigo_postal FROM direccion WHERE es_favorita = 0;
