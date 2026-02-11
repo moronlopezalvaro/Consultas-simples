@@ -421,3 +421,6 @@ ALTER TABLE `vale_descuento`
   
 -- 1.- Realiza una consulta y muestra todos los datos de las categorías.
 SELECT * FROM categoria;
+
+-- 2.- Realiza una consulta y muestra los datos de la calle, la población y la ciudad de todos los almacenes.
+SELECT calle, poblacion, ciudad FROM almacen;
