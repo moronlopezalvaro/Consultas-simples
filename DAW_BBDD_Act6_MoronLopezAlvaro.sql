@@ -427,3 +427,6 @@ SELECT calle, poblacion, ciudad FROM almacen;
 
 -- 3.- Obtén los datos del email y la fecha de registro de todos los usuarios.
 SELECT email, fecha_registro FROM usuario;
+
+-- 4.- Obtén la fecha de caducidad y si han sido usado o no, de todos los vales de descuento ordenado por fecha de caducidad de forma descendente.
+SELECT fecha_caducidad, usado FROM vale_descuento ORDER BY fecha_caducidad DESC;
