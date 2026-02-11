@@ -430,3 +430,6 @@ SELECT email, fecha_registro FROM usuario;
 
 -- 4.- Obtén la fecha de caducidad y si han sido usado o no, de todos los vales de descuento ordenado por fecha de caducidad de forma descendente.
 SELECT fecha_caducidad, usado FROM vale_descuento ORDER BY fecha_caducidad DESC;
+
+-- 5.- Obtén todas las direcciones mostrando los valores de id_direccion, ciudad e id_usuario ordenado por id_usuario de forma ascendente.
+SELECT id_direccion, ciudad, id_usuario FROM direccion ORDER BY id_usuario ASC;
