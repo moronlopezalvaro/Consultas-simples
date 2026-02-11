@@ -1,5 +1,6 @@
-CREATE DATABASE hym;
-USE hym;
+DROP DATABASE IF EXISTS hym_act7; 
+CREATE DATABASE IF NOT EXISTS hym_act7;
+USE hym_act7;
 
 --
 -- Base de datos: `hym_act7`
@@ -417,3 +418,6 @@ ALTER TABLE `producto_categoria`
 --
 ALTER TABLE `vale_descuento`
   ADD CONSTRAINT `usuario_FK` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
+  
+-- 1.- Realiza una consulta y muestra todos los datos de las categorías.
+SELECT * FROM categoria;
