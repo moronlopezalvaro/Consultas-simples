@@ -444,3 +444,8 @@ SELECT calle, ciudad, codigo_postal FROM direccion WHERE es_favorita = 0;
 SELECT precio, id_almacen, nombre FROM producto
 WHERE precio < 30 
 ORDER BY id_almacen DESC, nombre DESC;
+
+-- 9.- Obtén los datos de nombre y descripción de las categorías cuyo nombre empiecen por la letra ‘C’ ordenadas por el id_categoria de forma ascendente.
+SELECT nombre, descripcion FROM categoria
+WHERE nombre LIKE 'C%'
+ORDER BY id_categoria ASC;
