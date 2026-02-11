@@ -433,3 +433,6 @@ SELECT fecha_caducidad, usado FROM vale_descuento ORDER BY fecha_caducidad DESC;
 
 -- 5.- Obtén todas las direcciones mostrando los valores de id_direccion, ciudad e id_usuario ordenado por id_usuario de forma ascendente.
 SELECT id_direccion, ciudad, id_usuario FROM direccion ORDER BY id_usuario ASC;
+
+-- 6.- Muestra todos los datos de los productos cuyo stock sea mayor que 14.
+SELECT * FROM producto WHERE stock > 14;
