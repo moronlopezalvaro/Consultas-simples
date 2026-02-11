@@ -424,3 +424,6 @@ SELECT * FROM categoria;
 
 -- 2.- Realiza una consulta y muestra los datos de la calle, la población y la ciudad de todos los almacenes.
 SELECT calle, poblacion, ciudad FROM almacen;
+
+-- 3.- Obtén los datos del email y la fecha de registro de todos los usuarios.
+SELECT email, fecha_registro FROM usuario;
