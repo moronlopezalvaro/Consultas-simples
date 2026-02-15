@@ -480,3 +480,7 @@ LIMIT 1;
 -- 16.- Calcula la media del precio de los productos que tengan stock mayor de 10.
 SELECT AVG (precio) AS precio_medio FROM producto
 WHERE stock > 10;
+
+-- 17.- Cuenta cuántos usuarios son miembro-plus y tienen menos de 100 puntos acumulados.
+SELECT COUNT(*) AS miembro_plus FROM usuario
+WHERE tipo_miembro = 'miembro-plus' AND puntos_acumulados < 100;
