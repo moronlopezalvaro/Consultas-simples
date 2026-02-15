@@ -470,3 +470,9 @@ WHERE usado = 0 AND fecha_caducidad > CURDATE();
 -- 14.- Cuenta cuántos productos contienen la palabra “Fit” en su nombre.
 SELECT COUNT(*) AS producto_fit FROM producto
 WHERE nombre LIKE '%Fit%';
+
+-- 15.- Muestra el producto con el precio más bajo excluyendo los del almacén 2.
+SELECT * FROM producto
+WHERE id_almacen != 2
+ORDER BY precio ASC
+LIMIT 1;
