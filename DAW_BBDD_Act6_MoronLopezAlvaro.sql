@@ -462,3 +462,7 @@ LIMIT 1;
 -- 12.- Cuenta cuántos pedidos ha realizado el usuario con id_usuario 5.
 SELECT COUNT(*) AS total_pedidos FROM compra
 WHERE id_usuario = 5;
+
+-- 13.- Cuenta cuántos vales descuento no han sido usados y todavía no han caducado.
+SELECT COUNT(*) AS vales_sin_usar FROM vale_descuento
+WHERE usado = 0 AND fecha_caducidad > CURDATE();
