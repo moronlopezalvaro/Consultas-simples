@@ -466,3 +466,7 @@ WHERE id_usuario = 5;
 -- 13.- Cuenta cuántos vales descuento no han sido usados y todavía no han caducado.
 SELECT COUNT(*) AS vales_sin_usar FROM vale_descuento
 WHERE usado = 0 AND fecha_caducidad > CURDATE();
+
+-- 14.- Cuenta cuántos productos contienen la palabra “Fit” en su nombre.
+SELECT COUNT(*) AS producto_fit FROM producto
+WHERE nombre LIKE '%Fit%';
