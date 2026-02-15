@@ -476,3 +476,7 @@ SELECT * FROM producto
 WHERE id_almacen != 2
 ORDER BY precio ASC
 LIMIT 1;
+
+-- 16.- Calcula la media del precio de los productos que tengan stock mayor de 10.
+SELECT AVG (precio) AS precio_medio FROM producto
+WHERE stock > 10;
