@@ -458,3 +458,7 @@ ORDER BY calle ASC, capacidad_total ASC;
 SELECT precio FROM producto
 ORDER BY precio DESC
 LIMIT 1;
+
+-- 12.- Cuenta cuántos pedidos ha realizado el usuario con id_usuario 5.
+SELECT COUNT(*) AS total_pedidos FROM compra
+WHERE id_usuario = 5;
