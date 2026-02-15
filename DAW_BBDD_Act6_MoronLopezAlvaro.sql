@@ -488,3 +488,8 @@ WHERE tipo_miembro = 'miembro-plus' AND puntos_acumulados < 100;
 -- 18.- Cuenta cuántos almacenes tienen valores distintos de NULL en el campo capacidad_total.
 SELECT COUNT(capacidad_total) 
 FROM almacen;
+
+-- 19.- De la tabla productos, muestra la suma del stock por cada almacén.
+SELECT id_almacen, SUM(stock) AS Total_Stock
+FROM producto 
+GROUP BY id_almacen;
