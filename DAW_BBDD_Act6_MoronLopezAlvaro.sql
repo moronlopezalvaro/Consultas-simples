@@ -493,3 +493,8 @@ FROM almacen;
 SELECT id_almacen, SUM(stock) AS Total_Stock
 FROM producto 
 GROUP BY id_almacen;
+
+-- 20.- Calcula la media de valor total de las compras que se han realizado en 2021.
+SELECT AVG(total_compra) 
+FROM compra 
+WHERE YEAR(fecha) = 2021;
